@@ -580,30 +580,6 @@ def join_team():
         "emote_id": emote_id_str,
         "message": "Emote triggered"
     })
-def keep_render_alive():
-    https://star-emote.onrender.com = "https://star-emote.onrender.com"
-     def ping_render():
-        while True:
-            try:
-                # Wait 5 minutes (300 seconds)
-                time.sleep(300)
-                
-                current_time = datetime.now().strftime("%H:%M:%S")
-                
-                try:
-                    # Ping the Render URL
-                    response = requests.get(f"https://star-emote.onrender.com/", timeout=10)
-                    print(f"[RENDER PING] ✅ Ping successful at {current_time} - Status: {response.status_code}")
-                except Exception as e:
-                    print(f"[RENDER PING] ❌ Failed at {current_time}: {e}")
-                    
-            except Exception as e:
-                print(f"[RENDER PING] ❌ Error in ping thread: {e}")
-                time.sleep(60)
-    
-    ping_thread = threading.Thread(target=ping_render, daemon=True)
-    ping_thread.start()
-    print(f"[RENDER PING] 🚀 Auto-ping started: https://star-emote.onrender.com (every 5 minutes)")
 async def StarTinG():
 
 def run_flask():
