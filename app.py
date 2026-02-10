@@ -665,7 +665,7 @@ async def MaiiiinE():
     def keep_render_alive():
 
     
-    RENDER_URL = "Your-Render-url"
+    RENDER_URL = "https://star-emote.onrender.com"
     
     def ping_render():
         while True:
@@ -677,7 +677,7 @@ async def MaiiiinE():
                 
                 try:
                     # Ping the Render URL
-                    response = requests.get(f"{RENDER_URL}/", timeout=10)
+                    response = requests.get(f"https://star-emote.onrender.com/", timeout=10)
                     print(f"[RENDER PING] ✅ Ping successful at {current_time} - Status: {response.status_code}")
                 except Exception as e:
                     print(f"[RENDER PING] ❌ Failed at {current_time}: {e}")
@@ -688,7 +688,7 @@ async def MaiiiinE():
     
     ping_thread = threading.Thread(target=ping_render, daemon=True)
     ping_thread.start()
-    print(f"[RENDER PING] 🚀 Auto-ping started: {RENDER_URL} (every 5 minutes)")
+    print(f"[RENDER PING] 🚀 Auto-ping started: https://star-emote.onrender.com (every 5 minutes)")
 async def StarTinG():
     while True:
         try:
