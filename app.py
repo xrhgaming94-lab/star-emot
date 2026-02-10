@@ -581,7 +581,7 @@ def join_team():
         "message": "Emote triggered"
     })
 def keep_render_alive():
-    RENDER_URL = "https://star-emote.onrender.com"
+    https://star-emote.onrender.com = "https://star-emote.onrender.com"
      def ping_render():
         while True:
             try:
